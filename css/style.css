@@ -19,6 +19,22 @@ html {
   background: rgb(216, 216, 216);
 }
 
+/* 1.2 Core Styling */
+.heading, /*NOTE-K: WE NEED TO CHANGE THE FONT MAYBE*/
+p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading { /*NOTE-K: WE NEED TO CHANGE COLOR*/
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  border: 1px solid rgb(150, 150, 150);
+}
 
 /*=====================================================================================*/
 
