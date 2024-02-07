@@ -13,3 +13,9 @@
   display: flex;
   justify-content: center;
 }
+
+.feature-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
