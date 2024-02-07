@@ -1,4 +1,4 @@
-.nav-row{
+.row{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   margin: 0 22rem;
@@ -7,4 +7,9 @@
 .logo-img{
   display: flex;
   align-items: center;
+}
+
+.inner__banner{
+  display: flex;
+  justify-content: center;
 }
