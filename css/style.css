@@ -1,3 +1,27 @@
+/**TABLE OF CONTENTS**
+
+1.1 Page Rendering Defaults
+
+*/
+
+/*=====================================================================================*/
+/* 1.1 Page Rendering Defaults */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
+  background: rgb(216, 216, 216);
+}
+
+
+/*=====================================================================================*/
+
 .row{
   display: grid;
   grid-template-columns: repeat(5,1fr);
