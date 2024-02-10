@@ -141,6 +141,7 @@ p{
 .nav-icons .row{
   display: flex;
   flex-direction: row;
-  justify-content: end;
-}
+  justify-content: center;
+} 
  
+
