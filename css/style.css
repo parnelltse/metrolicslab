@@ -81,29 +81,6 @@ h1, h2, h3, h4, h5, h6
   position: relative;
   background-color: rgb(255, 253, 242);
 }
-/*=====================================================================================*/
-
-/* NOTE-K maybe we can use this for within <section> areas
-.row{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  margin: 0 22rem;
-} */
-
-
-.logo-img,
-.inner__banner,
-.feature-text,
-.heading,
-p{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-text{
-  text-align: center;
-}
 
 /* 2.2 Small only */
 
@@ -139,11 +116,32 @@ p{
 }
 /* 2.4 Medium Only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .m-row-span{
-    grid-column-start: 1;
-    grid-column-end: -1;
+  /*use this to span across whole page*/
+  .m-row-span {
+      grid-column-start: 1;
+      grid-column-end: -1;
   }
-  
+  .m-hide {
+      display: none;
+  }
+}
+
+/*=====================================================================================*/
+/* ORGANIZE EVERYTHING BELOW THIS LATER */
+/*=====================================================================================*/
+
+.logo-img,
+.inner__banner,
+.feature-text,
+.heading,
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-text{
+  text-align: center;
 }
 
 .nav-icons .row{
@@ -151,8 +149,14 @@ p{
   flex-direction: row;
   justify-content: end;
 }
- 
-/* Things that we do contents NOTE-K organize later */
+
+/*Aligns things horizontally*/
+.fit-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TTWD Things That We Do inner contents NOTE-K */
 .card__section {
   display: flex;
   gap: 1rem;
