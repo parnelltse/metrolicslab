@@ -105,7 +105,15 @@ p{
   text-align: center;
 }
 
-/* 2.3 medium and up */
+/* 2.2 Small only */
+
+@media screen and (max-width: 39.9375em) {
+  .s-hide {
+      display: none;
+  }
+}
+
+/* 2.3 medium and up (tablet and desktop) */
 @media screen and (min-width: 40em) {
   .row{
     max-width: 70rem;
@@ -144,3 +152,24 @@ p{
   justify-content: end;
 }
  
+/* Things that we do contents NOTE-K organize later */
+.card__section {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-ttwd {
+  display: flex;
+  align-self: flex-start;
+  width: 10rem;
+  object-fit: contain;
+}
+
+.header-bold {
+  display: block;
+  font-weight: 800;
+}
+
+.text-ttwd {
+
+}
