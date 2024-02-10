@@ -144,12 +144,6 @@ p{
   text-align: center;
 }
 
-.nav-icons .row{
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
 /*Aligns things horizontally*/
 .fit-horizontal {
   display: flex;
@@ -181,3 +175,27 @@ p{
   font-weight: 800;
   line-height: 2rem;
 }
+
+/* header section still need to be adjusted */
+.page-header{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.logo{
+  width: 10rem;
+  margin-left: 6.5rem;
+  margin-top: 4rem;
+}
+
+.nav-icons-item{
+  width: 7rem;  
+}
+
+.nav-icons .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
