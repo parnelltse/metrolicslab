@@ -202,9 +202,6 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
 }
 
 .img__caption-text {
@@ -232,6 +229,12 @@ p{
   .card__expand {
       display: flex;
       flex-direction: row;
+  }
+
+  .img__caption {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
   }
 
   .img__caption-expand {
