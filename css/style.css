@@ -60,7 +60,7 @@ p {
 }
 
 .text-small {
-  font-size: 10px;
+  font-size: .7em;
 }
 
 h2 {
@@ -156,7 +156,7 @@ p{
   }
 }
 
-/* What' Up Lately inner contents NOTE-K */
+/* WUL What' Up Lately inner contents NOTE-K */
 .card__section-wul {
   position: relative;
   padding: 0;
@@ -245,6 +245,51 @@ p{
     padding-bottom: 1rem;
     background-color: #19b2de;
   }
+}
+
+/*OLP Our Latest Projects inner contents NOTE-K*/
+.card__section-olp {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__section-olp .card-img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img__caption-olp {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #19b2de;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media screen and (min-width: 40em) {
+.img__overlay {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(25,178,222, 0.9);
+  align-items: end;
+  padding: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.img__caption-text {
+  padding-bottom: 0.3rem;
+}
 }
 
 /* Font related styling */
