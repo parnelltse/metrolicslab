@@ -299,6 +299,27 @@ p{
   line-height: 2rem;
 }
 
+/*TOA Things Of Above inner contents NOTE-K*/
+.inner__section-toa {
+  display: flex
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.promo-img {
+  min-width: 1rem;
+  flex-basis: auto;
+}
+
+.toa-images {
+  padding: 0;
+}
+
 /* header section still need to be adjusted */
 
 .page-header {
