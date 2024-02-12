@@ -300,27 +300,76 @@ p{
 }
 
 /* header section still need to be adjusted */
-.page-header{
+
+.page-header {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
+  padding: 0 20px; 
 }
 
-.logo{
-  width: 10rem;
-  margin-left: 6.5rem;
+.logo {
+  width: 100%; 
+  max-width: 10rem; 
   margin-top: 4rem;
 }
 
-.nav-icons-item{
-  width: 7rem;  
+.nav-icons-item {
+  width: 100%; 
+  max-width: 7rem; 
 }
 
-.nav-icons .row{
+.nav-icons .row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
+@media screen and (max-width: 40em) {
+  .page-header {
+    grid-template-columns: auto; 
+    justify-content: center; 
+  }
+
+  .logo, .nav-icons-item {
+    margin-top: 2rem; 
+  }
+}
+
+.card-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card-img img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+@media screen and (max-width: 40em) {
+  .card-img {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .row.m-col-2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+}
+
+/* FOOTER STILL NEEDS TO BE FIXED */
+.card__footer{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* 2.2 Small only */
 
@@ -331,6 +380,7 @@ p{
 }
 
 /* 2.3 medium and up (tablet and desktop) */
+
 @media screen and (min-width: 40em) {
   .row{
     max-width: 70rem;
@@ -354,7 +404,9 @@ p{
     grid-template-columns: 1fr 2fr;
   }
 }
+
 /* 2.4 Medium Only */
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   /*use this to span across whole page*/
   .m-row-span {
