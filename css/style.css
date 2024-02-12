@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6
 {
   outline: .1px solid lightgrey;
   min-height: 1rem;
-  padding: 1rem;
+
 }
 
 /* 2.1 Core Layout */
@@ -308,9 +308,12 @@ p{
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   width: 100%; 
   max-width: 10rem; 
   margin-top: 4rem;
+  margin-left: 4rem;
 }
 
 .nav-icons-item {
@@ -323,8 +326,12 @@ p{
   flex-direction: row;
   justify-content: flex-start;
 }
+.nav-icons img{
+  width: 100%;
+  max-width: 7rem;
+}
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 39.9375em) {
   .page-header {
     grid-template-columns: auto; 
     justify-content: center; 
@@ -348,25 +355,48 @@ p{
 }
 
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 39.9375em) {
   .card-img {
     flex-direction: column; 
     align-items: center; 
   }
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 39.9375em) {
   .row.m-col-2 {
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: row; 
     justify-content: center; 
   }
 }
 
-/* FOOTER STILL NEEDS TO BE FIXED */
-.card__footer{
+.hamburger-menu{
   display: flex;
+  justify-content: center;
+  width: 5rem;
+}
+
+
+
+
+
+
+/* FOOTER STILL NEEDS TO BE FIXED */
+
+
+.card__outer__footer{
+  display: flex;
+  justify-content: center;
   flex-direction: row;
+  gap: 9rem;
+}
+
+.page-footer{
+  height: 20rem;
+  background-color: #494949;
+}
+.card-img{
+  width: 10rem;
 }
 
 
