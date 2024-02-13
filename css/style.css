@@ -37,6 +37,11 @@ img {
   border: 1px solid rgb(150, 150, 150);
 }
 
+.outer__padding {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
 /* 1.3 Typography */
 h1,
 h2,
@@ -65,6 +70,12 @@ p {
 
 h2 {
   font-weight: 400;
+}
+
+.header-bold {
+  display: block;
+  font-weight: 500;
+  line-height: 2rem;
 }
 /*=====================================================================================*/
 /** 2. LAYOUT **/
@@ -100,7 +111,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*=====================================================================================*/
-/* ORGANIZE EVERYTHING BELOW THIS LATER */
+/* CSS BY SECTION */
 /*=====================================================================================*/
 
 .logo-img,
@@ -113,8 +124,19 @@ p{
   justify-content: center;
 }
 
+.inner__banner {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
 .feature-text{
   text-align: center;
+}
+
+.text-blue {
+  color:#19b2de;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 /*Aligns things horizontally*/
@@ -290,13 +312,6 @@ p{
 .img__caption-text {
   padding-bottom: 0.3rem;
 }
-}
-
-/* Font related styling */
-.header-bold {
-  display: block;
-  font-weight: 500;
-  line-height: 2rem;
 }
 
 /*TOA Things Of Above inner contents NOTE-K*/
