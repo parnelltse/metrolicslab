@@ -467,7 +467,14 @@ p{
 }
 
 
-
+/* 2.1 Core Layout */
+.page {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 28rem;
+  padding-right: 28rem;
+  background: rgb(255, 255, 255);
+}
 
 /* 2.2 Small only */
 
