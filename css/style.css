@@ -37,11 +37,6 @@ img {
   border: 1px solid rgb(150, 150, 150);
 }
 
-.outer__padding {
-  padding-left: 20rem;
-  padding-right: 20rem;
-}
-
 /* 1.3 Typography */
 h1,
 h2,
@@ -70,12 +65,6 @@ p {
 
 h2 {
   font-weight: 400;
-}
-
-.header-bold {
-  display: block;
-  font-weight: 500;
-  line-height: 2rem;
 }
 /*=====================================================================================*/
 /** 2. LAYOUT **/
@@ -111,7 +100,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*=====================================================================================*/
-/* CSS BY SECTION */
+/* ORGANIZE EVERYTHING BELOW THIS LATER */
 /*=====================================================================================*/
 
 .logo-img,
@@ -124,19 +113,8 @@ p{
   justify-content: center;
 }
 
-.inner__banner {
-  padding-left: 20rem;
-  padding-right: 20rem;
-}
-
 .feature-text{
   text-align: center;
-}
-
-.text-blue {
-  color:#19b2de;
-  padding-left: .5rem;
-  padding-right: .5rem;
 }
 
 /*Aligns things horizontally*/
@@ -314,6 +292,13 @@ p{
 }
 }
 
+/* Font related styling */
+.header-bold {
+  display: block;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
 /*TOA Things Of Above inner contents NOTE-K*/
 .inner__section-toa {
   display: flex
@@ -336,80 +321,61 @@ p{
 }
 
 /* header section still need to be adjusted */
-
 .page-header {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  width: 100%; 
-  max-width: 10rem; 
-  margin-top: 4rem;
-  margin-left: 4rem;
-}
-
-.nav-icons-item {
-  width: 100%; 
-  max-width: 7rem; 
-}
-
-.nav-icons .row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8rem;
 }
-.nav-icons img{
-  width: 100%;
+
+.header-img {
+  display: flex;
+  flex-direction: row;
   max-width: 7rem;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .page-header {
-    grid-template-columns: auto; 
-    justify-content: center; 
-  }
-
-  .logo, .nav-icons-item {
-    margin-top: 2rem; 
-  }
-}
-
-.card-img {
+.nav-icons-inner {
   display: flex;
   flex-direction: row;
   justify-content: center; 
   align-items: center; 
 }
 
-.card-img img {
-  max-width: 100%; 
-  height: auto; 
-}
-
-
-@media screen and (max-width: 39.9375em) {
-  .card-img {
-    flex-direction: column; 
-    align-items: center; 
-  }
-}
-
-@media screen and (max-width: 39.9375em) {
-  .row.m-col-2 {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-  }
-}
-
-.hamburger-menu{
+.logo{
   display: flex;
-  justify-content: center;
-  width: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  width: 17rem;
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .logo{
+    display: flex;
+    margin-top: 4rem;
+    margin-right: 10rem;
+    padding-right: 3rem;
+    width: 11rem;
+  }
+  
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .nav-icons-inner{
+    display: flex;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 39.9375em){
+  .page-header{
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hamburger-menu img{
+    margin-bottom: -2rem;
+  }
 }
 
 
@@ -420,20 +386,66 @@ p{
 /* FOOTER STILL NEEDS TO BE FIXED */
 
 
-.card__outer__footer{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 9rem;
+.page-footer{
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #16242f;
+  border-bottom: 1.25rem solid transparent;
+  border-image: linear-gradient(to right, #16242f 0%, #16242f 65%, #25c389 65%, #25c389 70%, #ffb901 70%, #ffb901 75%,#de6262 75%,#de6262 80%,#1691bd 80%,#1691bd 85%,#166ba2 85%,#166ba2 90%, #16242f 90%, #16242f 100%) 1;
 }
 
-.page-footer{
-  height: 20rem;
-  background-color: #494949;
+.signature__name {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+  max-width: 70rem; 
+  margin: 0 auto; 
 }
-.card-img{
-  width: 10rem;
+
+
+.signature__block{
+  display: flex;
+  justify-content: center;
 }
+
+@media screen and (min-width: 64em) {
+  .row_m-col-2_l-col-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 74rem;
+    margin: 0 auto; 
+    padding: 0 2rem; 
+  }
+}
+
+ 
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .row_m-col-2_l-col-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 39.9375em){
+  .signature__name img{
+    width: 90%;
+  }
+   .row_m-col-2_l-col-3{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+} .page-footer{
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #16242f;
+  border-bottom: 1.25rem solid transparent;
+  border-image: linear-gradient(to right, #16242f 0%, #16242f 15%, #25c389 15%, #25c389 30%, #ffb901 30%, #ffb901 45%,#de6262 45%,#de6262 60%,#1691bd 60%,#1691bd 75%,#166ba2 75%,#166ba2 90%, #16242f 90%, #16242f 100%) 1;
+}
+}
+
+
 
 
 /* 2.2 Small only */
