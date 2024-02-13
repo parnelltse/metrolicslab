@@ -19,7 +19,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: .7em;
   line-height: 1.4;
   background: rgb(216, 216, 216);
 }
@@ -50,17 +50,16 @@ div {
   color: #494949;
 }
 
-.heading {
-  padding: 0;
-  margin: 0;
-}
-
 p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .text-small {
-  font-size: .7em;
+  font-size: 10px;
+}
+
+.text-blue {
+  color:#19b2de;
 }
 
 h2 {
@@ -77,15 +76,15 @@ footer,
 header,
 h1, h2, h3, h4, h5, h6 
 {
-  outline: .1px solid lightgrey;
   min-height: 1rem;
-
 }
 
 /* 2.1 Core Layout */
 .page {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 0;
+  padding-left: 15rem;
+  padding-right: 15rem;
   background: rgb(255, 255, 255);
 }
 
@@ -96,7 +95,16 @@ h1, h2, h3, h4, h5, h6
 
 .col {
   position: relative;
-  background-color: rgb(255, 253, 242);
+}
+
+.page__section {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
 }
 
 /*=====================================================================================*/
@@ -105,7 +113,6 @@ h1, h2, h3, h4, h5, h6
 
 .logo-img,
 .inner__banner,
-.feature-text,
 .heading,
 p{
   display: flex;
@@ -115,6 +122,8 @@ p{
 
 .feature-text{
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /*Aligns things horizontally*/
@@ -214,6 +223,17 @@ p{
   width: 2.5rem;
   height: 2.5rem;
 }
+
+.bottom-decoration {
+  border-bottom: 2px solid #E5E5E5;
+}
+
+.bottom-decoration-blue {
+  margin-top: -2px;
+  border-top: 3px #19b2de solid;
+  border-image: linear-gradient(to right, #19b2de 32%, transparent 32%) 100% 1;
+}
+
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .card__section-wul {
@@ -345,8 +365,9 @@ p{
 .logo{
   display: flex;
   padding-right: 5rem;
-  padding-top: 2rem;
   width: 17rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 @media screen and (min-width: 40em) and (max-width: 63.9375em){
   .logo{
@@ -454,6 +475,16 @@ p{
   .s-hide {
       display: none;
   }
+
+  .page {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .feature-text {
+    font-size: 1.5rem;
+  }
+
 }
 
 /* 2.3 medium and up (tablet and desktop) */
@@ -492,6 +523,11 @@ p{
   }
   .m-hide {
       display: none;
+  }
+
+  .page {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
